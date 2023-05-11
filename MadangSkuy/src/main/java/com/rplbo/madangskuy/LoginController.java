@@ -1,17 +1,38 @@
 package com.rplbo.madangskuy;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class LoginController {
     @FXML
-    TextField username;
+    private TextField username;
 
     @FXML
-    PasswordField password;
+    private PasswordField password;
 
+//    @FXML
+//    Button login;
     @FXML
-    Button login;
+    void buttonLogin(ActionEvent event) throws IOException{
+        boolean valid = true;
+
+        if (valid){
+            Parent AdminHomepage = FXMLLoader.load(getClass().getResource("admin-homepage.fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(AdminHomepage));
+            stage.show();
+
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+        }
+    }
 }

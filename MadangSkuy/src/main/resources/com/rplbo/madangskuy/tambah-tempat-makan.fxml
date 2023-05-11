@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.TambahTMController">
+   <children>
+      <Label layoutX="65.0" layoutY="43.0" text="TAMBAH TEMPAT MAKAN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="95.0" text="Nama Tempat Makan">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namaTempatMakan" layoutX="65.0" layoutY="123.0" prefHeight="26.0" prefWidth="305.0" />
+      <Label layoutX="68.0" layoutY="159.0" text="Alamat">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alamat" layoutX="65.0" layoutY="187.0" prefHeight="26.0" prefWidth="305.0" />
+      <Label layoutX="68.0" layoutY="221.0" text="Nomor Telepon">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noHp" layoutX="65.0" layoutY="249.0" prefHeight="26.0" prefWidth="305.0" />
+      <Label layoutX="205.0" layoutY="286.0" text="Rating">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rating" layoutX="205.0" layoutY="310.0" prefHeight="26.0" prefWidth="44.0" />
+      <Label layoutX="66.0" layoutY="357.0" text="Deskripsi">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="deskripsi" layoutX="64.0" layoutY="377.0" prefHeight="122.0" prefWidth="306.0" />
+      <Label layoutX="69.0" layoutY="286.0" text="Kategori">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="457.0" layoutY="118.0" prefHeight="276.0" prefWidth="295.0" style="-fx-background-color: #EEEEEE;" />
+      <MenuButton fx:id="kategori" layoutX="69.0" layoutY="309.0" mnemonicParsing="false" text="Pilih Kategori">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Button layoutX="307.0" layoutY="525.0" mnemonicParsing="false" onAction="#tambahData" prefHeight="43.0" prefWidth="186.0" style="-fx-background-color: GREEN;" text="Tambah Tempat Makan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="3.0" layoutY="9.0" mnemonicParsing="false" onAction="#toHome" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: white;" text="&lt; BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

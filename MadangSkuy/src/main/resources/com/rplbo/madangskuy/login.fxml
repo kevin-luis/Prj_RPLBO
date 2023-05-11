@@ -29,7 +29,7 @@
                </font>
             </Text>
             <PasswordField fx:id="password" layoutX="26.0" layoutY="159.0" prefHeight="25.0" prefWidth="245.0" promptText="Masukkan Password" />
-            <Button fx:id="login" layoutX="125.0" layoutY="230.0" mnemonicParsing="false" text="Login" />
+            <Button layoutX="125.0" layoutY="230.0" mnemonicParsing="false" onAction="#buttonLogin" text="Login" />
          </children>
       </Pane>
    </children>
