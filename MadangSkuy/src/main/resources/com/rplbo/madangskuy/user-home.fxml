@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHome">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHome">
    <children>
       <AnchorPane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #DBDFEA;">
          <children>
@@ -20,7 +20,7 @@
       <AnchorPane layoutX="149.0" layoutY="149.0" prefHeight="200.0" prefWidth="171.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
          <children>
             <Label layoutX="9.0" layoutY="164.0" style="-fx-font-weight: bold;" text="Sate Padang Aryo" />
-            <Label layoutX="9.0" layoutY="181.0" prefHeight="11.0" prefWidth="69.0" style="-fx-font-size: 7;" text="KLITREN - 1,3 KM " />
+            <Label layoutX="9.0" layoutY="181.0" prefHeight="11.0" prefWidth="69.0" style="-fx-font-size: 7;" text="KLITREN - 0,3 KM " />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/sate%20padang.png" />
@@ -31,7 +31,7 @@
                   <Image url="@../../../images/star.png" />
                </image>
             </ImageView>
-            <Label layoutX="132.0" layoutY="164.0" text="4,3" />
+            <Label layoutX="132.0" layoutY="164.0" text="4,8" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="331.0" layoutY="149.0" prefHeight="200.0" prefWidth="171.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
