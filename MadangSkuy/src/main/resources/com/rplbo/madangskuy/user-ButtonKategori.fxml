@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserButtonKategori">
+   <children>
+      <AnchorPane prefHeight="316.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
+         <children>
+            <Label layoutX="59.0" layoutY="25.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
+            <TextField layoutX="248.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#backMainPage" style="-fx-background-radius: 10;" text="Kategori" />
+            <ButtonBar layoutX="106.0" layoutY="132.0" prefHeight="40.0" prefWidth="200.0" />
+            <Button layoutX="147.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-background-color: white; -fx-padding: 8;" text="Masakan Indonesia" />
+            <Button layoutX="288.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Cepat Saji" />
+            <Button layoutX="427.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Tradisional" />
+            <Button layoutX="573.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Chinesse" />
+            <Button layoutX="151.0" layoutY="120.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Makanan Berkuah" />
+            <Button layoutX="288.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Makanan kaya gizi" />
+            <Button layoutX="427.0" layoutY="120.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Japanese" />
+            <Button layoutX="573.0" layoutY="120.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan korea" />
+            <Button layoutX="288.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Jawa" />
+            <Button layoutX="151.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Sunda" />
+            <Button layoutX="427.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Minang" />
+            <Button layoutX="573.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Masakan Rumah" />
+            <Button layoutX="151.0" layoutY="204.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Daging Ayam" />
+            <Button layoutX="288.0" layoutY="204.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Daging sapi" />
+            <Button layoutX="427.0" layoutY="204.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Daging kambing" />
+            <Button layoutX="573.0" layoutY="208.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Ikan Laut" />
+            <Button layoutX="151.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Ikan Air Tawar" />
+            <Button layoutX="288.0" layoutY="253.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Aneka Steak" />
+            <Button layoutX="427.0" layoutY="253.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Sayuran" />
+            <Button layoutX="573.0" layoutY="253.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 8;" text="Aneka Buah" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="150.0" layoutY="369.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Terdekat" />
+      <AnchorPane layoutX="149.0" layoutY="400.0" prefHeight="200.0" prefWidth="171.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="9.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../images/Sate-Taichan-1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Taichan Wibi" />
+            <ImageView fitHeight="11.0" fitWidth="15.0" layoutX="114.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../../images/star.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="129.0" layoutY="165.0" text="4,4" />
+            <Label layoutX="9.0" layoutY="181.0" style="-fx-font-size: 7;" text="KLITREN - 0,5 KM" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="400.0" prefHeight="200.0" prefWidth="171.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="9.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../images/soto.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="164.0" style="-fx-font-weight: bold;" text="Soto Pak Ehud" />
+            <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="117.0" layoutY="164.0">
+               <image>
+                  <Image url="@../../../images/star.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="132.0" layoutY="164.0" text="4,3" />
+            <Label layoutX="9.0" layoutY="181.0" style="-fx-font-size: 7;" text="KLITREN - 0,7 KM" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="511.0" layoutY="400.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="162.0" layoutX="9.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../images/seblak.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="164.0" style="-fx-font-weight: bold;" text="Seblak Om Kevin" />
+            <Label layoutX="9.0" layoutY="181.0" style="-fx-font-size: 7;" text="KLITREN - 0,8 KM" />
+            <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="130.0" layoutY="166.0">
+               <image>
+                  <Image url="@../../../images/star.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="145.0" layoutY="166.0" text="4,3" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
