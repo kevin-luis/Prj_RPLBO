@@ -13,7 +13,7 @@
          <children>
             <Label layoutX="59.0" layoutY="25.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
             <TextField layoutX="248.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
-            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Kategori" />
+            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#buttonkategori" style="-fx-background-radius: 10;" text="Kategori" />
          </children>
       </AnchorPane>
       <Label layoutX="148.0" layoutY="109.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Aneka Masakan Indonesia" />
