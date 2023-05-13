@@ -10,20 +10,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.userSearchcontrol">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.userSearchcontrol">
    <children>
-      <AnchorPane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #DBDFEA;">
+      <AnchorPane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
          <children>
             <Label layoutX="59.0" layoutY="25.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
-            <TextField layoutX="247.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="sate" style="-fx-background-radius: 10;" />
-            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Kategori" />
+            <TextField layoutX="247.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" style="-fx-background-radius: 10;" text="sate" />
+            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#kategori" style="-fx-background-radius: 10;" text="Kategori" onMouseClicked="#kategori" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="88.0" layoutY="132.0" prefHeight="468.0" prefWidth="622.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
+      <AnchorPane layoutX="86.0" layoutY="175.0" prefHeight="468.0" prefWidth="622.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;">
          <children>
             <AnchorPane layoutX="57.0" layoutY="33.0" prefHeight="176.0" prefWidth="172.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10; -fx-border-color: #cccccc;">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" onMouseClicked="#klikSatepadang" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../images/sate%20padang.png" />
                      </image>
@@ -61,15 +61,18 @@
                   </ImageView>
                </children>
             </AnchorPane>
+            <Label layoutX="504.0" layoutY="14.0" style="-fx-font-size: 7;" text="Menampilkan 1-10 Tempat Makan  " />
          </children>
       </AnchorPane>
-      <Text layoutX="270.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasil Pencarian : " wrappingWidth="121.98301124572754" />
-      <Text layoutX="385.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="sate" wrappingWidth="64.79999999999995" />
-      <ChoiceBox layoutX="99.0" layoutY="94.0" prefWidth="150.0" />
-      <Text layoutX="110.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Urutkan Berdasarkan" wrappingWidth="145.98301124572754">
+      <Text layoutX="248.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasil Pencarian : " wrappingWidth="121.98301124572754" />
+      <Text layoutX="337.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="sate" wrappingWidth="64.79999999999995" />
+      <ChoiceBox layoutX="86.0" layoutY="127.0" prefWidth="150.0" />
+      <Text layoutX="102.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Urutkan Berdasarkan" wrappingWidth="145.98301124572754">
          <font>
             <Font size="11.0" />
          </font>
       </Text>
+      <Label layoutX="86.0" layoutY="100.0" onMouseClicked="#backhome" text="Home &gt;" />
+      <Label layoutX="133.0" layoutY="100.0" text="sate" />
    </children>
 </AnchorPane>
