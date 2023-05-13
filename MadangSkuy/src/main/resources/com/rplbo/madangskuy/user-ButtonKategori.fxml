@@ -13,7 +13,7 @@
       <AnchorPane prefHeight="316.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
          <children>
             <Label layoutX="59.0" layoutY="25.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
-            <TextField layoutX="248.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+            <TextField fx:id="search" onAction="#search" layoutX="248.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
             <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#backMainPage" style="-fx-background-radius: 10;" text="Kategori" />
             <ButtonBar layoutX="106.0" layoutY="132.0" prefHeight="40.0" prefWidth="200.0" />
             <Button layoutX="147.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-background-color: white; -fx-padding: 8;" text="Masakan Indonesia" />
