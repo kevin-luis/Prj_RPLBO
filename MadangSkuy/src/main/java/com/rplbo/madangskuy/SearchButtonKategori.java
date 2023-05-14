@@ -13,7 +13,7 @@ import java.io.IOException;
 public class SearchButtonKategori {
     @FXML
     public void backsearch(MouseEvent event) throws IOException {
-        Parent search = FXMLLoader.load(getClass().getResource("searching.fxml"));
+        Parent search = FXMLLoader.load(getClass().getResource("searchingButton.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(search));
         stage.show();

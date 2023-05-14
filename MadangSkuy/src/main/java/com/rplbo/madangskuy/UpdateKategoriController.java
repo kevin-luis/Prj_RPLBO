@@ -6,18 +6,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TambahTMController {
+public class UpdateKategoriController {
     private Parent root;
     private Scene scene;
     private Stage stage;
     @FXML
-    public void toHome(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("admin-homepage.fxml"));
+    public void toHome(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("daftar-tempat-makan-admin.fxml"));
         root = loader.load();
         scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -28,34 +30,21 @@ public class TambahTMController {
     }
 
     @FXML
-    private void tambahData() {
+    private void updateData() {
         // kode Anda untuk menambahkan data
 
         // menampilkan pesan bahwa data berhasil ditambahkan
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Berhasil!");
-        alert.setHeaderText("Tempat Makan berhasil ditambahkan.");
+        alert.setHeaderText("Kategori berhasil diupdate.");
 //        alert.setContentText("Terima kasih telah menambahkan data.");
 
         alert.showAndWait();
     }
 
     @FXML
-    private TextField namaTempatMakan;
-
-    @FXML
-    private TextField alamat;
-
-    @FXML
-    private TextField noHp;
-
-    @FXML
-    private MenuButton kategori;
-
-    @FXML
-    private TextField rating;
+    private TextField nama_kategori;
 
     @FXML
     private TextArea deskripsi;
-
 }

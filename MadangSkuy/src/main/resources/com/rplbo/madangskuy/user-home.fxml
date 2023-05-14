@@ -7,13 +7,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHome">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHome">
    <children>
       <AnchorPane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
          <children>
             <Label layoutX="59.0" layoutY="25.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
-            <TextField fx:id="searching"  onAction="#searching" layoutX="248.0" layoutY="29.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
-            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#buttonkategori" style="-fx-background-radius: 10;" text="Kategori" />
+            <TextField fx:id="searching" layoutX="248.0" layoutY="29.0" onAction="#searching" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+            <Button layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#toKategori" style="-fx-background-radius: 10;" text="Kategori" />
          </children>
       </AnchorPane>
       <Label layoutX="148.0" layoutY="109.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Aneka Masakan Indonesia" />
@@ -21,7 +21,7 @@
          <children>
             <Label layoutX="9.0" layoutY="164.0" style="-fx-font-weight: bold;" text="Sate Padang Aryo" />
             <Label layoutX="9.0" layoutY="181.0" prefHeight="11.0" prefWidth="69.0" style="-fx-font-size: 7;" text="KLITREN - 0,3 KM " />
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#klikSatepadang">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" onMouseClicked="#klikSatepadang" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/sate%20padang.png" />
                </image>

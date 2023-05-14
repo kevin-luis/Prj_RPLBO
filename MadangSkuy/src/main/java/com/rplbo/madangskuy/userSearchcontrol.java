@@ -12,6 +12,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 public class userSearchcontrol {
 
+    Parent root;
+    Scene scene;
+    Stage stage;
+
 
     public void klikSatepadang(MouseEvent event) throws IOException {
         Parent kategoriPage = FXMLLoader.load(getClass().getResource("detail-page.fxml"));
@@ -30,11 +34,13 @@ public class userSearchcontrol {
 
     @FXML
     public void kategori(ActionEvent event) throws IOException {
-        Parent kategoriPage = FXMLLoader.load(getClass().getResource("searchButtonKategori.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(kategoriPage));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("searching-kategori-user.fxml"));
+        root = loader.load();
+        scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
         stage.show();
-        ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
 
 

@@ -19,7 +19,7 @@
                </font>
             </Label>
             <Line endX="107.79998779296875" endY="7.62939453125E-6" layoutX="101.0" layoutY="62.0" startX="-100.0" stroke="#eeeeee" strokeWidth="3.0" />
-            <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#logoutButton" text="&lt; LOGOUT" />
+            <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#logoutButton" text="LOGOUT" />
             <Button alignment="TOP_LEFT" layoutX="1.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #666666; -fx-font-weight: BOLD; -fx-border-color: WHITE;" text="Daftar Tempat Makan" textFill="WHITE" />
             <Button alignment="TOP_LEFT" layoutY="108.0" mnemonicParsing="false" onAction="#toKategori" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #666666; -fx-border-color: white;" text="Daftar Kategori" textFill="WHITE">
                <font>
@@ -43,32 +43,32 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Label layoutX="225.0" layoutY="119.0" text="No.">
+      <Label layoutX="230.0" layoutY="119.0" text="No.">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="260.0" layoutY="119.0" text="Nama Tempat Makan">
+      <Label layoutX="265.0" layoutY="119.0" text="Nama Tempat Makan">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="400.0" layoutY="119.0" text="Alamat">
+      <Label layoutX="405.0" layoutY="119.0" text="Alamat">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="472.0" layoutY="119.0" text="No Telepon">
+      <Label layoutX="477.0" layoutY="119.0" text="No Telepon">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="553.0" layoutY="119.0" text="Rating">
+      <Label layoutX="558.0" layoutY="119.0" text="Rating">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="606.0" layoutY="119.0" text="Deskripsi">
+      <Label layoutX="611.0" layoutY="119.0" text="Deskripsi">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="676.0" layoutY="119.0" text="Kategori">
+      <Label layoutX="681.0" layoutY="119.0" text="Kategori">
          <font>
             <Font name="Calibri Bold" size="12.0" />
          </font>
@@ -201,7 +201,7 @@
             <Font name="System Bold" size="8.0" />
          </font>
       </Button>
-      <Button layoutX="722.0" layoutY="192.0" mnemonicParsing="false" style="-fx-background-color: Green;" text="Edit" textFill="WHITE">
+      <Button layoutX="722.0" layoutY="192.0" mnemonicParsing="false" onAction="#toUpdate" style="-fx-background-color: Green;" text="Edit" textFill="WHITE">
          <font>
             <Font name="System Bold" size="8.0" />
          </font>
@@ -216,7 +216,7 @@
             <Font name="System Bold" size="8.0" />
          </font>
       </Button>
-      <Button layoutX="752.0" layoutY="228.0" mnemonicParsing="false" style="-fx-background-color: Red;" text="Delete" textFill="WHITE">
+      <Button fx:id="hapusButton" layoutX="752.0" layoutY="228.0" mnemonicParsing="false" onAction="#deleteItem" style="-fx-background-color: Red;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="8.0" />
          </font>

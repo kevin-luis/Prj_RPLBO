@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UpdateKategoriController">
+   <children>
+      <Label layoutX="294.0" layoutY="33.0" text="UPDATE KATEGORI">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="123.0" text="Nama Kategori">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nama_kategori" layoutX="248.0" layoutY="151.0" prefHeight="26.0" prefWidth="305.0" text="Sate" />
+      <Label layoutX="249.0" layoutY="195.0" text="Deskripsi">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="deskripsi" layoutX="247.0" layoutY="215.0" prefHeight="122.0" prefWidth="306.0" text="Sate merupakan daging yang ditusuk dan dibakar" />
+      <Button layoutX="326.0" layoutY="377.0" mnemonicParsing="false" onAction="#updateData" prefHeight="43.0" prefWidth="147.0" style="-fx-background-color: GREEN;" text="Update Kategori" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="3.0" layoutY="9.0" mnemonicParsing="false" onAction="#toHome" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: white;" text="&lt; BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

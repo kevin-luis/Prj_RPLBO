@@ -18,12 +18,17 @@ public class UserButtonKategori {
     Scene scene;
     Stage stage;
 
+    @FXML
     public void backMainPage(ActionEvent event) throws IOException {
-        Parent mainPage = FXMLLoader.load(getClass().getResource("user-home.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(mainPage));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user-home.fxml"));
+        root = loader.load();
+
+
+        scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
         stage.show();
-        ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
 
     @FXML

@@ -16,17 +16,21 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 
 public class UserHome {
-//    Parent root;
-//    Scene scene;
-//    Stage stage;
+    Parent root;
+    Scene scene;
+    Stage stage;
 
     @FXML
-    public void buttonkategori(ActionEvent event) throws IOException {
-        Parent kategoriPage = FXMLLoader.load(getClass().getResource("user-ButtonKategori.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(kategoriPage));
+    public void toKategori(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user-ButtonKategori.fxml"));
+        root = loader.load();
+
+
+        scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
         stage.show();
-        ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
     @FXML
     private TextField searching;
