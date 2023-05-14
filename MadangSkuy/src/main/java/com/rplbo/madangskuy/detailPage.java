@@ -16,19 +16,27 @@ public class detailPage {
     private Stage stage;
 
     public void backhome(MouseEvent event) throws IOException {
-        Parent kategoriPage = FXMLLoader.load(getClass().getResource("user-home.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(kategoriPage));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user-home.fxml"));
+        root = loader.load();
+
+
+        scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
         stage.show();
-        ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
 
     public void backsearch(MouseEvent event) throws IOException {
-        Parent kategoriPage = FXMLLoader.load(getClass().getResource("searching.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(kategoriPage));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("searching.fxml"));
+        root = loader.load();
+
+
+        scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
         stage.show();
-        ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
 
     @FXML
