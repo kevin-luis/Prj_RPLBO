@@ -1,14 +1,14 @@
 package com.rplbo.madangskuy;
 
 public class TempatMakan {
-    static  int next_id = 1;
-    int id_tempat_makan = 0;
-    String nama_tempat_makan;
-    String alamat;
-    String noHP;
-    double rating;
-    String kategori_tempat_makan;
-    String deskripsi;
+    private static  int next_id = 1;
+    private int id_tempat_makan = 0;
+    private String nama_tempat_makan;
+    private String alamat;
+    private String noHP;
+    private double rating;
+    private String kategori_tempat_makan;
+    private String deskripsi;
 
     public TempatMakan(String nama_tempat_makan,String alamat, String noHP, double rating,String kategori_tempat_makan, String deskripsi){
         this.setNama_tempat_makan(nama_tempat_makan);
@@ -20,6 +20,7 @@ public class TempatMakan {
         this.id_tempat_makan = next_id++;
     }
 
+    public int getId_tempat_makan(){return id_tempat_makan;}
 
     public String getNama_tempat_makan() {
         return nama_tempat_makan;

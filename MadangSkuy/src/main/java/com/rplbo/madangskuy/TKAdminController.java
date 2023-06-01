@@ -63,7 +63,9 @@ public class TKAdminController {
     public void toTTM(ActionEvent event) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admin-homepage.fxml"));
         root = loader.load();
-        AdminHomepageController adminHomepageController =  loader.getController();
+        AdminHomepageController adminHomepageController = loader.getController();
+        adminHomepageController.tampilData();
+
 
         scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
