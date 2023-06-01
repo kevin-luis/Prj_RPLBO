@@ -54,6 +54,7 @@ public class AdminHomepageController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("daftar-tempat-makan-admin.fxml"));
         root = loader.load();
         TKAdminController tkAdminController = loader.getController();
+        tkAdminController.tampilData();
 
 
         scene = new Scene(getRoot());

@@ -77,11 +77,31 @@ public class Main extends Application {
         DBTempatMakan.getDBTempatMakan().add(TM29);
         DBTempatMakan.getDBTempatMakan().add(TM30);
 
-        KategoriTempatMakan KTM1 = new KategoriTempatMakan("Sate", "Sate enak sekali");
+        KategoriTempatMakan KTM1 = new KategoriTempatMakan("Sate", "Sate Enak sekali");
         KategoriTempatMakan KTM2 = new KategoriTempatMakan("Bakso", "Bakso Mantap Sekali");
+        KategoriTempatMakan KTM3 = new KategoriTempatMakan("Bebek", "Bebek Lezat Sekali");
+        KategoriTempatMakan KTM4 = new KategoriTempatMakan("Soto", "Soto Gurih Sekali");
+        KategoriTempatMakan KTM5 = new KategoriTempatMakan("Seblak", "Seblak Nikmat Sekali");
+        KategoriTempatMakan KTM6 = new KategoriTempatMakan("Es Dawet", "Es Dawet Seger Sekali");
+        KategoriTempatMakan KTM7 = new KategoriTempatMakan("Sop", "Sop Maknyus Sekali");
+        KategoriTempatMakan KTM8 = new KategoriTempatMakan("Pecel Lele", "Pecel Lele Juara Sekali");
+        KategoriTempatMakan KTM9 = new KategoriTempatMakan("Ayam", "Ayam Lezat Sekali");
+        KategoriTempatMakan KTM10 = new KategoriTempatMakan("Kopi", "Kopi Mantul Sekali");
+        KategoriTempatMakan KTM11 = new KategoriTempatMakan("Lotek", "Lotek Mantap Sekali");
+        KategoriTempatMakan KTM12 = new KategoriTempatMakan("Nasi Goreng", "Nasi Goreng Nagihin Sekali");
 
         DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM1);
         DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM2);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM3);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM4);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM5);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM6);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM7);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM8);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM9);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM10);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM11);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM12);
 
 
 

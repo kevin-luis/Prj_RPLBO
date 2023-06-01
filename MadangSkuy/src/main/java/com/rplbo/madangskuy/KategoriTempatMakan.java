@@ -28,4 +28,8 @@ public class KategoriTempatMakan {
     public void setDeskripsi(String deskripsi) {
         this.deskripsi = deskripsi;
     }
+
+    public int getId_kategori() {
+        return id_kategori;
+    }
 }

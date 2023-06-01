@@ -10,6 +10,8 @@ import javafx.scene.control.Alert;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -22,6 +24,31 @@ public class TKAdminController {
 
     @FXML
     private Button hapusButton;
+    @FXML
+    VBox tampunganKategori = new VBox();
+
+    Pane mypane;
+    Pane mypane2;
+    @FXML
+    public void tampilData() throws IOException {
+        int no = 1;
+        FXMLLoader loader2 = new FXMLLoader(getClass().getResource("object-title-kategori.fxml"));
+        mypane2 = loader2.load();
+        tampunganKategori.getChildren().add(mypane2);
+
+        for (KategoriTempatMakan ktm : DBKategoriTempatMakan.getDBKategoriTempatMakan()) {
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("objectKategori.fxml"));
+            mypane = loader.load();
+            tampunganKategori.getChildren().add(mypane);
+
+
+            ObjectKategoriController objectKategoriController = loader.getController();
+            objectKategoriController.showData(ktm);
+            objectKategoriController.addNum(Integer.toString(no));
+            no++;
+    }
+}
 
 
     @FXML
