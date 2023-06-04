@@ -27,6 +27,21 @@ public class LoginController {
 
     @FXML
     private Label status;
+    @FXML
+    private Button user;
+    @FXML
+    void buttonUser(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user-homepage.fxml"));
+        root = loader.load();
+        UserHomepageController userHomepageController = loader.getController();
+        userHomepageController.tampilData();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Madang SKuy");
+        stage.show();
+
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
 
 
 

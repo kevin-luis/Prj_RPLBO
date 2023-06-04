@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="171.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.ObjectUserSubpageController">
+    <children>
+        <Label fx:id="namaTempatMakan" alignment="TOP_LEFT" layoutX="9.0" layoutY="164.0" prefHeight="24.0" prefWidth="106.0" style="-fx-font-weight: bold;" text="Sate Padang Aryo">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="alamat" layoutX="9.0" layoutY="181.0" prefHeight="11.0" prefWidth="69.0" style="-fx-font-size: 7;" text="KLITREN - 0,3 KM " />
+        <ImageView fitHeight="147.0" fitWidth="153.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/sate%20padang.png" />
+            </image></ImageView>
+        <ImageView fitHeight="18.0" fitWidth="16.0" layoutX="119.0" layoutY="164.0">
+            <image>
+                <Image url="@../../../images/star.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="rating" layoutX="138.0" layoutY="164.0" text="4,8" />
+    </children>
+</AnchorPane>

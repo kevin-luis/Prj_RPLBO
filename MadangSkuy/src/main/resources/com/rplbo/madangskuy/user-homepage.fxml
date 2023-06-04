@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHomepageController">
+    <children>
+        <Pane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
+            <children>
+                <Label layoutX="25.0" layoutY="27.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
+                <TextField layoutX="226.0" layoutY="31.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+                <Button fx:id="kategori" layoutX="668.0" layoutY="30.0" mnemonicParsing="false" onAction="#keKategori" style="-fx-background-radius: 10;" text="Kategori" />
+            </children>
+        </Pane>
+        <Pane layoutY="84.0" prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+            <children>
+                <ScrollPane prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+                    <content>
+                        <VBox prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+                            <children>
+                                <Label style="-fx-font-weight: bold; -fx-font-size: 20;" text="Aneka Masakan Indonesia">
+                                    <VBox.margin>
+                                        <Insets left="130.0" top="10.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <HBox fx:id="tampungan" prefHeight="200.0" prefWidth="540.0" spacing="15.0" style="-fx-background-color: white;">
+                                    <VBox.margin>
+                                        <Insets left="130.0" right="130.0" top="5.0" />
+                                    </VBox.margin>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </HBox>
+                                <Label style="-fx-font-weight: bold; -fx-font-size: 20;" text="Rating Terbaik">
+                                    <VBox.margin>
+                                        <Insets left="130.0" top="25.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <VBox prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <GridPane fx:id="myGrid">
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                        </GridPane>
+                                    </children>
+                                    <padding>
+                                        <Insets left="130.0" right="130.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
