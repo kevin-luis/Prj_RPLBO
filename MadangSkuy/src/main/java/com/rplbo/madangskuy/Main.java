@@ -323,7 +323,7 @@ public class Main extends Application {
         KategoriTempatMakan KTM9 = new KategoriTempatMakan("Ayam", "Ayam Lezat Sekali");
         KategoriTempatMakan KTM10 = new KategoriTempatMakan("Kopi", "Kopi Mantul Sekali");
         KategoriTempatMakan KTM11 = new KategoriTempatMakan("Lotek", "Lotek Mantap Sekali");
-//        KategoriTempatMakan KTM12 = new KategoriTempatMakan("Nasi Goreng", "Nasi Goreng Nagihin Sekali");
+        KategoriTempatMakan KTM12 = new KategoriTempatMakan("Nasi Goreng", "Nasi Goreng Nagihin Sekali");
 //      KategoriTempatMakan KTM13 = new KategoriTempatMakan("es Buah", "es buah yang segar");
 //      KategoriTempatMakan KTM14 = new KategoriTempatMakan("Gudeg", "gudeg bikin candu");
 
