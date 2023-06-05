@@ -59,6 +59,6 @@
             <Font name="System Bold" size="8.0" />
          </font>
       </Button>
-      <Label fx:id="no" alignment="TOP_LEFT" layoutX="4.0" prefHeight="26.0" prefWidth="18.0" style="-fx-wrap-text: true;" text="1" />
+      <Label fx:id="no" alignment="TOP_LEFT" layoutX="4.0" prefHeight="26.0" prefWidth="26.0" style="-fx-wrap-text: true;" text="1" />
    </children>
 </AnchorPane>

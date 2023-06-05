@@ -13,26 +13,26 @@
    <children>
       <Pane prefHeight="300.0" prefWidth="295.0" style="-fx-background-color: grey;">
          <children>
-            <Text layoutX="98.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN ADMIN">
+            <Text fill="WHITE" layoutX="98.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN ADMIN">
                <font>
                   <Font name="Calibri Bold" size="20.0" />
                </font>
             </Text>
-            <Text layoutX="25.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
+            <Text fill="WHITE" layoutX="25.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </Text>
             <TextField fx:id="username" layoutX="25.0" layoutY="99.0" prefHeight="25.0" prefWidth="245.0" promptText="Masukkan Username" />
-            <Text layoutX="25.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+            <Text fill="WHITE" layoutX="25.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </Text>
             <PasswordField fx:id="password" layoutX="26.0" layoutY="159.0" prefHeight="25.0" prefWidth="245.0" promptText="Masukkan Password" />
-            <Button layoutX="125.0" layoutY="230.0" mnemonicParsing="false" onAction="#buttonLogin" text="Login" />
+            <Button layoutX="125.0" layoutY="215.0" mnemonicParsing="false" onAction="#buttonLogin" text="Login" />
             <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="198.0" textAlignment="CENTER" textFill="RED" />
-            <Button fx:id="user" layoutX="49.0" layoutY="264.0" mnemonicParsing="false" onAction="#buttonUser" prefHeight="6.0" prefWidth="199.0" text="Klik Disini jika Kamu Pengguna!">
+            <Button fx:id="user" layoutX="48.0" layoutY="258.0" mnemonicParsing="false" onAction="#buttonUser" prefHeight="6.0" prefWidth="199.0" style="-fx-background-color: #00ff0d;" text="Klik Disini jika Kamu Pengguna!" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>

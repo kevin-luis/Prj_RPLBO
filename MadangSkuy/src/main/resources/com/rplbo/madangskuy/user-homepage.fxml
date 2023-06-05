@@ -11,14 +11,20 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserHomepageController">
     <children>
         <Pane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
             <children>
                 <Label layoutX="25.0" layoutY="27.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
-                <TextField layoutX="226.0" layoutY="31.0" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+                <TextField fx:id="searching" layoutX="226.0" layoutY="31.0" onAction="#searching" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
                 <Button fx:id="kategori" layoutX="668.0" layoutY="30.0" mnemonicParsing="false" onAction="#keKategori" style="-fx-background-radius: 10;" text="Kategori" />
+            <Button layoutX="743.0" layoutY="31.0" mnemonicParsing="false" onAction="#keluar" style="-fx-background-color: red; -fx-background-radius: 10;" text="Keluar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
             </children>
         </Pane>
         <Pane layoutY="84.0" prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">

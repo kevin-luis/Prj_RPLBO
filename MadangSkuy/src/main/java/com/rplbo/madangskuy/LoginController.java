@@ -50,7 +50,7 @@ public class LoginController {
     @FXML
     void buttonLogin(ActionEvent event) throws IOException{
 
-        if(username.getText().equals("") && password.getText().equals("")){
+        if(username.getText().equals("admin") && password.getText().equals("admin123")){
 //            Parent AdminHomepage = FXMLLoader.load(getClass().getResource("admin-homepage.fxml"));
             FXMLLoader loader = new FXMLLoader(getClass().getResource("admin-homepage.fxml"));
             root = loader.load();

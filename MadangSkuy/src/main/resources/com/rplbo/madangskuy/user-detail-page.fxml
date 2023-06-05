@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.madangskuy.UserDetailPageController">
+    <children>
+        <Pane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #F6F1F1;">
+            <children>
+                <Label layoutX="25.0" layoutY="27.0" onMouseClicked="#klikMadangSkuy" style="-fx-font-weight: bold; -fx-font-size: 23;" text="MADANG SKUY" />
+                <TextField fx:id="pencarian" layoutX="226.0" layoutY="31.0" onAction="#searching" prefHeight="25.0" prefWidth="417.0" promptText="Mau Cari Makan ?" style="-fx-background-radius: 10;" />
+                <Button fx:id="kategori" layoutX="668.0" layoutY="30.0" mnemonicParsing="false" onAction="#keKategori" style="-fx-background-radius: 10;" text="Kategori" />
+            <Button layoutX="743.0" layoutY="31.0" mnemonicParsing="false" onAction="#keluar" style="-fx-background-color: red; -fx-background-radius: 10;" text="Keluar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+        <Pane layoutY="84.0" prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+            <children>
+                <ScrollPane hbarPolicy="NEVER" prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+                    <content>
+                        <VBox prefHeight="516.0" prefWidth="800.0" style="-fx-background-color: white;">
+                            <children>
+                                <HBox prefHeight="10.0" prefWidth="800.0">
+                                    <children>
+                                        <Label fx:id="back" onMouseClicked="#klikBack" text="&lt; BACK">
+                                            <HBox.margin>
+                                                <Insets left="30.0" top="5.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <VBox fx:id="tampungan" prefHeight="258.0" prefWidth="631.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="85.0" right="85.0" top="10.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                        <Insets bottom="10.0" left="30.0" top="30.0" />
+                                    </padding>
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <ImageView fitHeight="191.0" fitWidth="208.0" pickOnBounds="true">
+                                                    <image>
+                                                        <Image url="@../../../images/sate%20padang.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <VBox prefHeight="191.0" prefWidth="394.0">
+                                                    <children>
+                                                        <Label fx:id="namaTempatMakan" alignment="TOP_LEFT" prefHeight="42.0" prefWidth="370.0" text="SATE PADANG ENAK SEKALI">
+                                                            <padding>
+                                                                <Insets left="10.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font name="System Bold" size="21.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <HBox prefHeight="50.0" prefWidth="370.0">
+                                                            <children>
+                                                                <VBox prefHeight="50.0" prefWidth="81.0">
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="370.0" text="Rating">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label fx:id="rating" alignment="CENTER" prefHeight="36.0" prefWidth="82.0" text="4.5">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                            <graphic>
+                                                                                <ImageView fitHeight="16.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                                                                    <image>
+                                                                                        <Image url="@../../../images/star.png" />
+                                                                                    </image>
+                                                                                </ImageView>
+                                                                            </graphic>
+                                                                        </Label>
+                                                                    </children>
+                                                                </VBox>
+                                                                <Line endX="6.985816955566406" endY="11.385787963867188" startX="6.0" startY="-37.59999084472656" stroke="#eeeeee" strokeWidth="2.0" />
+                                                                <VBox prefHeight="52.0" prefWidth="111.0">
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="370.0" text="ALAMAT" textAlignment="CENTER">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label fx:id="alamat" alignment="CENTER" prefHeight="31.0" prefWidth="138.0" text="Jl. KLITREN" textAlignment="CENTER">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </VBox>
+                                                                <Line endX="6.985816955566406" endY="11.385787963867188" startX="6.0" startY="-37.59999084472656" stroke="#eeeeee" strokeWidth="2.0" />
+                                                                <VBox prefHeight="52.0" prefWidth="134.0">
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="370.0" text="NO. TELEPON" textAlignment="CENTER">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label fx:id="noHP" alignment="CENTER" prefHeight="31.0" prefWidth="138.0" text="081233442244" textAlignment="CENTER">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </VBox>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                            <children>
+                                                                <VBox prefHeight="99.0" prefWidth="426.0">
+                                                                    <children>
+                                                                        <Label prefHeight="36.0" prefWidth="110.0" text="Deskripsi">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="18.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label fx:id="deskripsi" alignment="TOP_LEFT" prefHeight="62.0" prefWidth="298.0" style="-fx-wrap-text: true;" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" textAlignment="JUSTIFY">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                    </children>
+                                                                </VBox>
+                                                                <VBox prefHeight="99.0" prefWidth="224.0">
+                                                                    <children>
+                                                                        <Label fx:id="r" alignment="CENTER" prefHeight="36.0" prefWidth="110.0" text="Kategori" textAlignment="CENTER">
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                            <font>
+                                                                                <Font name="System Bold" size="13.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                        <Label fx:id="kategoriTM" alignment="TOP_CENTER" prefHeight="41.0" prefWidth="94.0" style="-fx-wrap-text: true;" text="Sate" textAlignment="CENTER" />
+                                                                    </children>
+                                                                    <opaqueInsets>
+                                                                        <Insets />
+                                                                    </opaqueInsets>
+                                                                    <HBox.margin>
+                                                                        <Insets top="20.0" />
+                                                                    </HBox.margin>
+                                                                </VBox>
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -16,8 +16,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         TempatMakan TM1 = new TempatMakan("Sate Kambing Pak Slamet", "Jl. Sudirman", "081234567890", 4.0, "Sate", "Sate kambing lezat dengan bumbu khas Pak Slamet.");
-        TempatMakan TM2 = new TempatMakan("Sate Ayam Bu Yati", "Jl. Diponegoro", "081234567891", 3.5, "Sate", "Sate ayam yang diolah dengan resep tradisional ala Bu Yati.");
-        TempatMakan TM3 = new TempatMakan("Sate Madura Mas Paijo", "Jl. Pemuda", "081234567892", 4.3, "Sate", "Sate Madura dengan cita rasa autentik dari Mas Paijo.");
+        TempatMakan TM11 = new TempatMakan("Sate Ayam Bu Yati", "Jl. Diponegoro", "081234567891", 3.5, "Sate", "Sate ayam yang diolah dengan resep tradisional ala Bu Yati.");
+        TempatMakan TM21 = new TempatMakan("Sate Madura Mas Paijo", "Jl. Pemuda", "081234567892", 4.3, "Sate", "Sate Madura dengan cita rasa autentik dari Mas Paijo.");
         TempatMakan TM4 = new TempatMakan("Sate Maranggi Ibu Eni", "Jl. Merdeka", "081234567893", 4.2, "Sate", "Sate maranggi dengan bumbu khas yang menggugah selera dari Ibu Eni.");
         TempatMakan TM5 = new TempatMakan("Sate Buntel Pak Tarno", "Jl. Gajah Mada", "081234567894", 4.5, "Sate", "Sate buntel yang kenyal dan enak dari Pak Tarno.");
         TempatMakan TM6 = new TempatMakan("Sate Sapi Mr. Hendra", "Jl. Panglima Sudirman", "081234567895", 4.1, "Sate", "Sate sapi dengan cita rasa istimewa dari Mr. Hendra.");
@@ -26,7 +26,7 @@ public class Main extends Application {
         TempatMakan TM9 = new TempatMakan("Sate Taichan Mbak Siti", "Jl. Raya Magelang", "081234567898", 3.7, "Sate", "Sate taichan pedas dan gurih dari Mbak Siti.");
         TempatMakan TM10 = new TempatMakan("Sate Cumi Bu Endang", "Jl. Cikini", "081234567899", 4.3, "Sate", "Sate cumi yang lezat dan menggoda selera dari Bu Endang.");
 
-        TempatMakan TM11 = new TempatMakan("Bakso Malang Mas Slamet", "Jl. godean", "081234567800", 4.0, "Bakso", "Bakso Malang dengan cita rasa autentik dari Mas Slamet.");
+        TempatMakan TM2 = new TempatMakan("Bakso Malang Mas Slamet", "Jl. godean", "081234567800", 4.0, "Bakso", "Bakso Malang dengan cita rasa autentik dari Mas Slamet.");
         TempatMakan TM12 = new TempatMakan("Bakso Solo Bu Yati", "Jl. bantul", "081234567801", 3.5, "Bakso", "Bakso Solo yang diolah dengan resep tradisional ala Bu Yati.");
         TempatMakan TM13 = new TempatMakan("Bakso Jumbo Mas Paijo", "Jl. tua", "081234567802", 4.3, "Bakso", "Bakso jumbo dengan cita rasa lezat dari Mas Paijo.");
         TempatMakan TM14 = new TempatMakan("Bakso Sapi Ibu Eni", "Jl. Merdeka 2", "081234567803", 4.2, "Bakso", "Bakso sapi dengan bumbu khas yang menggugah selera dari Ibu Eni.");
@@ -37,7 +37,7 @@ public class Main extends Application {
         TempatMakan TM19 = new TempatMakan("Bakso Spesial Mbak Siti", "Jl.Magelang", "081234567808", 3.7, "Bakso", "Bakso spesial dengan cita rasa pedas dan gurih dari Mbak Siti.");
         TempatMakan TM20 = new TempatMakan("Bakso Lezat Bu Endang", "Jl.kini", "081234567809", 4.3, "Bakso", "Bakso yang lezat dan menggoda selera dari Bu Endang.");
 
-        TempatMakan TM21 = new TempatMakan("Bebek Goreng Bu Tini", "Jl. man", "081234567810", 4.0, "Bebek", "Bebek goreng dengan cita rasa lezat dari Bu Tini.");
+        TempatMakan TM3 = new TempatMakan("Bebek Goreng Bu Tini", "Jl. man", "081234567810", 4.0, "Bebek", "Bebek goreng dengan cita rasa lezat dari Bu Tini.");
         TempatMakan TM22 = new TempatMakan("Bebek Bakar Pak Slamet", "Jl. negoro", "081234567811", 3.5, "Bebek", "Bebek bakar dengan bumbu khas dari Pak Slamet.");
         TempatMakan TM23 = new TempatMakan("Bebek Penyet Mas Paijo", "Jl. muda", "081234567812", 4.3, "Bebek", "Bebek penyet dengan rasa yang menggugah selera dari Mas Paijo.");
         TempatMakan TM24 = new TempatMakan("Bebek Goreng Ibu Eni", "Jl. Merde", "081234567813", 4.2, "Bebek", "Bebek goreng dengan bumbu khas yang menggugah selera dari Ibu Eni.");

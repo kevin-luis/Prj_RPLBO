@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -24,6 +25,27 @@ public class UserHomepageController {
 
     @FXML
     Pane mypane;
+
+    @FXML
+    private TextField searching;
+
+    @FXML
+    public void searching(ActionEvent event) throws IOException {
+        String keyword = searching.getText().toLowerCase();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user-search-page.fxml"));
+        root = loader.load();
+
+        UserSearchPageController userSearchPageController = loader.getController();
+        userSearchPageController.key(keyword);
+        userSearchPageController.tampilDataSearching();
+
+        scene = new Scene(getRoot());
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        getStage().setScene(getScene());
+        getStage().show();
+
+    }
 
     public void tampilData() throws IOException {
         int kolom = 0;
@@ -100,6 +122,17 @@ public class UserHomepageController {
 
     public Stage getStage() {
         return stage;
+    }
+
+    @FXML
+    void keluar(ActionEvent event) throws IOException{
+        Parent loginPage = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(loginPage));
+        stage.show();
+
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+
     }
 
 }
