@@ -167,6 +167,13 @@ public class Main extends Application {
         TempatMakan TM139 = new TempatMakan("Nasi Goreng Mas Bro","Jl. Selokan Mataram","081354668744",4.7,"Nasi Goreng","Nasi Goreng murah tapi rasanya dijamin tidak murahan.");
         TempatMakan TM140 = new TempatMakan("Bebek Penyet Setan","Jl. Babarsari","087886956643",4.6,"Bebek","Bebek goreng yang dipenyet dengan sambel setan yang pedasnya nendang.");
 
+        TempatMakan TM141 = new TempatMakan("Nasi Goreng Mas Bro","Jl. Selokan Mataram","081354668744",4.7,"Nasi Goreng","Nasi Goreng murah tapi rasanya dijamin tidak murahan.");
+        TempatMakan TM142 = new TempatMakan("Warung Nasi Goreng Sedap","Jl. Ahmad Yani","081234567890",3.5,"Nasi Goreng","Nasi goreng khas dengan cita rasa yang sedap.");
+        TempatMakan TM143 = new TempatMakan("Nasi Goreng Nyonya","Jl. Sudirman","081222333444",4.8,"Nasi Goreng","Nasi goreng spesial dengan bumbu khas Nyonya.");
+        TempatMakan TM144 = new TempatMakan("Nasi Goreng Sambal Matah","Jl. Gajah Mada","081111222333",4.6,"Nasi Goreng","Nasi goreng pedas dengan sambal matah yang menggugah selera.");
+        TempatMakan TM145 = new TempatMakan("Nasi Goreng Kambing Guling","Jl. Kaliurang","081098765432",4.9,"Nasi Goreng","Nasi goreng dengan tambahan daging kambing guling yang lezat.");
+        TempatMakan TM146 = new TempatMakan("Nasi Goreng Seafood Asli","Jl. Prawirotaman","081277788899",4.4,"Nasi Goreng","Nasi goreng seafood dengan pilihan bahan segar dan asli.");
+        TempatMakan TM147 = new TempatMakan("Nasi Goreng Bistik Jawa","Jl. Malioboro","081335577889",4.7,"Nasi Goreng","Nasi goreng dengan daging bistik Jawa yang lembut dan enak.");
 
         DBTempatMakan.getDBTempatMakan().add(TM1);
         DBTempatMakan.getDBTempatMakan().add(TM2);
@@ -308,6 +315,13 @@ public class Main extends Application {
         DBTempatMakan.getDBTempatMakan().add(TM138);
         DBTempatMakan.getDBTempatMakan().add(TM139);
         DBTempatMakan.getDBTempatMakan().add(TM140);
+        DBTempatMakan.getDBTempatMakan().add(TM141);
+        DBTempatMakan.getDBTempatMakan().add(TM142);
+        DBTempatMakan.getDBTempatMakan().add(TM143);
+        DBTempatMakan.getDBTempatMakan().add(TM144);
+        DBTempatMakan.getDBTempatMakan().add(TM145);
+        DBTempatMakan.getDBTempatMakan().add(TM146);
+        DBTempatMakan.getDBTempatMakan().add(TM147);
 
 
 
@@ -324,8 +338,7 @@ public class Main extends Application {
         KategoriTempatMakan KTM10 = new KategoriTempatMakan("Kopi", "Kopi Mantul Sekali");
         KategoriTempatMakan KTM11 = new KategoriTempatMakan("Lotek", "Lotek Mantap Sekali");
         KategoriTempatMakan KTM12 = new KategoriTempatMakan("Nasi Goreng", "Nasi Goreng Nagihin Sekali");
-//      KategoriTempatMakan KTM13 = new KategoriTempatMakan("es Buah", "es buah yang segar");
-//      KategoriTempatMakan KTM14 = new KategoriTempatMakan("Gudeg", "gudeg bikin candu");
+
 
 
 
@@ -340,7 +353,7 @@ public class Main extends Application {
         DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM9);
         DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM10);
         DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM11);
-//        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM12);
+        DBKategoriTempatMakan.getDBKategoriTempatMakan().add(KTM12);
 
 
 
